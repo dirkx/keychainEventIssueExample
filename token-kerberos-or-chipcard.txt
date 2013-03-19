@@ -1,0 +1,41 @@
+Typical output when inserting/removing a chipcard, joining a kerberos KAC or similar
+
+2013-03-19 08:32:54.830 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 1
+2013-03-19 08:32:54.831 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.832 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 2
+2013-03-19 08:32:54.832 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.832 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 3
+2013-03-19 08:32:54.832 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.833 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 4
+2013-03-19 08:32:54.833 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.833 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 5
+2013-03-19 08:32:54.834 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.834 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 6
+2013-03-19 08:32:54.834 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.835 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 7
+2013-03-19 08:32:54.835 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.835 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 8
+2013-03-19 08:32:54.835 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.836 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 9
+2013-03-19 08:32:54.836 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.836 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 10
+2013-03-19 08:32:54.836 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.836 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 11
+2013-03-19 08:32:54.837 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.837 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 12
+2013-03-19 08:32:54.837 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.838 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 13
+2013-03-19 08:32:54.838 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.838 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 14
+2013-03-19 08:32:54.838 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.839 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 15
+2013-03-19 08:32:54.839 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+2013-03-19 08:32:54.839 keychainIssueDemo[15792:303] kSecKeychainListChangedEvent 16
+2013-03-19 08:32:54.840 keychainIssueDemo[15792:303] Keychain passed is 0x - giving up (and info is 0x0)
+....
+
+Actual numbers vary between 12 and 141 entries - depending on the machine. These numbers do not match up with the actual number of keys, certs, notes or similar in any of the keychains.
+
+Deleting an entry of each category in the keychain does not change the number of events actually passed.
+
+An identical card (or similarly sized kerberos realm) does not yield identical numbers on different machines.

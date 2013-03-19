@@ -1,0 +1,10 @@
+
+Example when doing File->Add Keychain in Keychain.app -- creating a keychain called 'fred':
+
+2013-03-19 08:34:31.411 keychainIssueDemo[15811:303] kSecKeychainListChangedEvent 1
+2013-03-19 08:34:31.412 keychainIssueDemo[15811:303] Keychain passed is 0x - giving up (and info is 0x0)
+
+Likewise when removing above 'fred' in keychain.app:
+
+2013-03-19 08:34:39.016 keychainIssueDemo[15811:303] kSecKeychainListChangedEvent 1
+2013-03-19 08:34:39.017 keychainIssueDemo[15811:303] Keychain passed is 0x - giving up (and info is 0x0)
